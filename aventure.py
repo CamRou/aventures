@@ -1,17 +1,5 @@
 #!/usr/bin/python
 
-class NodeFactory(object):
-    def __init__(self, description, question, answer):
-        self.description = description
-        self.question = question
-        self.answer = answer
-    def __call__(self):
-        print(self.description)
-        output = input(self.question)
-        print(self.answer)
-        return(output)
-
-
 class Node(object):
     """
         Concrete class for elements of the storyline.
